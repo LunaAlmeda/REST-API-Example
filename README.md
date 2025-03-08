@@ -18,8 +18,8 @@ situations where query parameters are not suitable for that specific request, du
 or many other factors. For that reason, I use POST endpoints with JSON bodies in my day-to-day work. That is primarily
 why I added that approach as well.
 
-Jacoco was implemented, and you can find that it does not understand that the ResponseStatusException is not covered.
-It is true that it is not covered on the Controller/Resource layer, but it is where it is triggered, in the service layer.
+Jacoco was implemented, and you can find that it does not understand that the ResponseStatusException is covered.
+Indeed, it is not covered on the Controller/Resource layer, but it is where it is triggered, in the service layer.
 
 I decided to work directly with JPA, but I am also used to work with several libraries that make JPA work a bit easier, it
 wasn't worth it for this specific use case to implement those libraries because the query was not complex enough to need it.
